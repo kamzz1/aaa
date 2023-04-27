@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <script>
+        function dodawanie()
+        {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML= a + b;
+
+        }
+        function odejmownie()
+        {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML= a - b;
+
+        }
+        function mnozenie()
+        {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML= a * b;
+
+        }
+        function dzielenie()
+        {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML= a / b;
+
+        }
+        function modulo()
+        {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML= a % b;
+
+        }
+        function dzieleniecalkowite()
+        {
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            var c = parseInt(a / b);
+            document.getElementById("wynik").innerHTML= c;
+
+        }
+        function potega()
+        {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML= a ** b;
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Prosty  kalkulator</h1> 
+    <p>Podaj  a =  </p>     
+    <input type="text" id="a">    
+    <p>Podaj  b =  </p>     
+    <input type="text" id="b">
+    <div id="wynik">Tu  ukaże się wynik</div>
+    <button  onclick="dodawanie()">+</button>    
+    <button  onclick="odejmownie()">-</button>    
+    <button  onclick="mnozenie()">*</button>    
+    <button  onclick="dzielenie()">/</button>    
+    <button  onclick="modulo()">%</button>    
+    <button  onclick="dzieleniecalkowite()">//</button>    
+    <button  onclick="potega()">**</button>    
+</body>
+</html>
